@@ -252,7 +252,7 @@ function Header4() {
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/project-masonary">
+            <Link legacyBehavior href="/case-study">
               <a>Case Studies</a>
             </Link>
           </li>
