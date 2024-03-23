@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { client } from "../../../sanity/lib/client";
 import BlockContent from "@sanity/block-content-to-react";
+import Breadcrumb from "@/components/common/Breadcrumb";
 
 export async function getStaticPaths() {
   const query = `*[_type == "post"].slug.current`;
@@ -77,6 +78,11 @@ export async function getStaticProps({ params }) {
 function BlogDetailsPage({ currentPost, prevPost, nextPost }) {
   return (
     <Layout>
+      <Breadcrumb
+        pageList="Projects Details"
+        title={currentPost.title}
+        pageName={currentPost.title.toUpperCase()}
+      />
       <div className="bolog-details-area sec-mar">
         <div className="container">
           <div className="row">
@@ -93,13 +99,9 @@ function BlogDetailsPage({ currentPost, prevPost, nextPost }) {
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8 offset-lg-2">
               <div className="blog-details-content">
-                {/* GPT Fetch and add the Category in the span below */}
-
-                <h2>{currentPost.title}</h2>
                 <div className="author-and-meta">
                   <div className="author-area">
                     <div className="author-img">
-                      {/*GPT Add Author Image here */}
                       <img src={currentPost.authorImage} alt="" />
                     </div>
                     <div className="author-content">
@@ -127,7 +129,6 @@ function BlogDetailsPage({ currentPost, prevPost, nextPost }) {
                 <div className="single-navigation">
                   {prevPost && (
                     <>
-                      {/* GPT Add links to the next and previous posts and remove these ones */}
                       <div className="content">
                         <Link legacyBehavior href={`/blog/${prevPost.slug}`}>
                           <a>Previous</a>
