@@ -120,7 +120,6 @@ function Home({ posts }) {
                 </div>
               );
             })}
-            {/* ------ */}
           </div>
         </div>
       </div>
@@ -128,7 +127,7 @@ function Home({ posts }) {
     </>
   );
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allPosts = await getAllPosts();
   const posts = allPosts.slice(0, 3);
 

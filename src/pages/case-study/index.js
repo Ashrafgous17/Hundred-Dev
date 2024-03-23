@@ -82,7 +82,7 @@ function CaseStudyPage({ caseStudies }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const caseStudies = await getCase();
   return {
     props: {

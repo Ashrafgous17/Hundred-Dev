@@ -84,7 +84,7 @@ function BlogPgage({ posts }) {
 }
 
 // Fetch posts at build time
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const posts = await getAllPosts();
 
   return {
