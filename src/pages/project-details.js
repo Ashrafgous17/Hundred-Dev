@@ -158,7 +158,14 @@ function ProjectDetailsPage() {
                     <span>Client:</span>
                     <h5>Argova Josen</h5>
                   </li>
-
+                  <li>
+                    <span>Company:</span>
+                    <h5>Egens Lab</h5>
+                  </li>
+                  <li>
+                    <span>Location:</span>
+                    <h5>7 Lake Street, London</h5>
+                  </li>
                   <li>
                     <span>Project Type:</span>
                     <h5>Desktop Mockup</h5>
