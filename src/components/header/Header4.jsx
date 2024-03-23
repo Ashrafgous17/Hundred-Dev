@@ -75,7 +75,7 @@ function Header4() {
       <div className="header-logo">
         <Link legacyBehavior href="/">
           <a>
-            <img alt="image" className="img-fluid" src="assets/img/logo.svg" />
+            <img alt="image" className="img-fluid" src="/assets/img/logo.svg" />
           </a>
         </Link>
       </div>
@@ -133,9 +133,8 @@ function Header4() {
               </li>
             </ul>
           </li> */}
-       
+
           <li className="menu-item-has-children">
-            
             <a
               href="#"
               className={`drop-down ${
@@ -156,7 +155,7 @@ function Header4() {
                 state.activeMenu === "service" ? "d-block" : ""
               }`}
             >
-               <li>
+              <li>
                 <Link legacyBehavior href="/service-details">
                   <a>UX Design</a>
                 </Link>
@@ -201,7 +200,6 @@ function Header4() {
                   <a>Chatbot Integration</a>
                 </Link>
               </li>
-             
             </ul>
           </li>
           {/* <li className="menu-item-has-children">
@@ -246,7 +244,7 @@ function Header4() {
               </li>
             </ul>
           </li> */}
-           <li>
+          <li>
             <Link legacyBehavior href="/pricing2">
               <a>Pricing</a>
             </Link>
@@ -266,7 +264,7 @@ function Header4() {
               <a>Blog</a>
             </Link>
           </li>
-        
+
           {/* <li className="menu-item-has-children">
             <a href="#" className="drop-down">
            Project
@@ -299,7 +297,7 @@ function Header4() {
               </li>
             </ul>
           </li> */}
-       
+
           {/* <li className="menu-item-has-children">
             <a
               href="#"
@@ -393,7 +391,6 @@ function Header4() {
         </ul>
         <div className="d-lg-none d-block">
           <form className="mobile-menu-form">
-            
             <div className="email pt-20 d-flex align-items-center">
               <div className="email-icon">
                 <svg

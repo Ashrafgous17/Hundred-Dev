@@ -120,7 +120,7 @@ function ProjectDetailsPage() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="row g-4 mb-55">
                   <div className="col-lg-7 col-sm-6">
                     <div className="portfolio-img magnetic-item">
@@ -158,14 +158,7 @@ function ProjectDetailsPage() {
                     <span>Client:</span>
                     <h5>Argova Josen</h5>
                   </li>
-                  <li>
-                    <span>Company:</span>
-                    <h5>Egens Lab</h5>
-                  </li>
-                  <li>
-                    <span>Location:</span>
-                    <h5>7 Lake Street, London</h5>
-                  </li>
+
                   <li>
                     <span>Project Type:</span>
                     <h5>Desktop Mockup</h5>
