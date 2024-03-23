@@ -1,7 +1,7 @@
 import { client } from "../../../sanity/lib/client";
 
 export async function getAllPosts() {
-  const query = `*[_type == "post"]{
+  const query = `*[_type == "post"] | order(publishedAt desc) {
       _id,
       title,
       slug,

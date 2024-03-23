@@ -78,11 +78,6 @@ function Home({ posts }) {
                         src={urlFor(mainImage).url()}
                         alt=""
                       />
-                      <div className="blog-tag">
-                        <Link legacyBehavior href="/blog">
-                          <a>Web development</a>
-                        </Link>
-                      </div>
                     </div>
                     <div className="blog-content">
                       <ul className="blog-meta">
