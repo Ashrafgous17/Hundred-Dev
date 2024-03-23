@@ -80,13 +80,7 @@ export default function ProjectDetailsPage({ caseStudy }) {
                             </div>
                             <span>Step {index + 1}</span>
 
-                            <h3>
-                              {index === 0
-                                ? "Research"
-                                : index === 1
-                                ? "Development"
-                                : "Deploy"}
-                            </h3>
+                            <h3>{step}</h3>
                           </div>
                         </div>
                       ))}

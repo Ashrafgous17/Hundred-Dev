@@ -70,6 +70,7 @@ export async function getStaticProps({ params }) {
       prevPost,
       nextPost,
     },
+    revalidate: 1,
   };
 }
 
