@@ -1,7 +1,7 @@
 import { client } from "../../../sanity/lib/client";
 
 export async function getCase() {
-  const query = `*[_type == "caseStudy"]{
+  const query = `*[_type == "caseStudy"] | order(_createdAt desc){
     title,
     "slug": slug.current,
     niche,
